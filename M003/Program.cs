@@ -20,7 +20,12 @@
 
 			int[,] zweiDArray = new int[3, 3]; //Matrix (3x3), Deklaration mit Beistrich in der Klammer, Initialisierung mit zwei Größen
 			zweiDArray[1, 1] = 3; //Mit zwei Indizes Array ansprechen
-			zweiDArray = new[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } }; //Direkte Initialisierung bei 2 Dimensionen
+			zweiDArray = new[,] 
+			{ 
+				{ 0, 0, 0 }, 
+				{ 0, 0, 0 }, 
+				{ 0, 0, 0 } 
+			}; //Direkte Initialisierung bei 2 Dimensionen
 			Console.WriteLine(zweiDArray.Length); //Gesamte Felder: 9
 			Console.WriteLine(zweiDArray.Rank); //Anzahl Dimensionen: 2
 			Console.WriteLine(zweiDArray.GetLength(0)); //Erste Dimension Länge: 3
