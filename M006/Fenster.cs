@@ -58,6 +58,8 @@ internal class Fenster
 		//Set weglassen
 	}
 
+	public double Flaeche => laenge * breite; //Get-Only Property (es macht keinen Sinn die Fläche zu setzen)
+
 	public int Scheibenanzahl { get; set; } = 2; //Standardwert setzen, wird bei Erstellung des Objekts gesetzt (new)
 	#endregion
 
